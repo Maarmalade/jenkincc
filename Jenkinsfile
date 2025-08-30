@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
+        //debug
         stage('Checkout') {
             steps {
-                git branch: 'main, url: 'https://github.com/Maarmalade/jenkincc.git'
+                git branch: 'main', url: 'https://github.com/Maarmalade/jenkincc.git'
             }
         }
         stage('Build') {
